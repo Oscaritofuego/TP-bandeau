@@ -1,0 +1,28 @@
+package TP;
+
+import bandeau.Bandeau;
+import java.util.ArrayList;
+
+import java.awt.*;
+
+public class Scenario {
+
+    public ArrayList<Effet> liste = new ArrayList<>();
+    public Bandeau b;
+    private int nbRep;
+
+    public Scenario(Bandeau b) {
+        this.b = b;
+        this.nbRep = nbRep;
+    }
+
+    public void ajouter(Effet e,int nbRep){
+    this.liste.add(e);
+    }
+
+    public void executer(int nbRep){
+        for (Effet e : liste){
+           e.realiser(b,nbRep);
+        }
+    }
+}
