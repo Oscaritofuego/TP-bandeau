@@ -4,7 +4,7 @@ import bandeau.Bandeau;
 
 import java.awt.*;
 
-public class Couleur extends Effet{
+public class couleur extends Effet{
 
     public void realiser(Bandeau b, int nbRep) {
         for ( int i = 0; i<nbRep+1; i++) {
